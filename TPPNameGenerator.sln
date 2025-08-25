@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPPNameGenerator.WebApi", "src\TPPNameGenerator.WebApi\TPPNameGenerator.WebApi.csproj", "{508AB2C3-6738-478B-B2BA-E1CD2343AA75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7FA795A9-0E28-42EC-B0C1-051BAF554190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPPNameGenerator.BusinessLogic", "src\TPPNameGenerator.BusinessLogic\TPPNameGenerator.BusinessLogic.csproj", "{699BF3BC-3A3D-4601-A934-136306D5E028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPPNameGenerator.BusinessLogic.UnitTests", "test\TPPNameGenerator.BusinessLogic.UnitTests\TPPNameGenerator.BusinessLogic.UnitTests.csproj", "{E44B2E22-2488-4D36-BA14-B74E4B27B342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPPNameGenerator.Domain", "src\TPPNameGenerator.Domain\TPPNameGenerator.Domain.csproj", "{5C424E7D-2CA6-427A-96F8-33CCE8DA5ED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{508AB2C3-6738-478B-B2BA-E1CD2343AA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{508AB2C3-6738-478B-B2BA-E1CD2343AA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{508AB2C3-6738-478B-B2BA-E1CD2343AA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{508AB2C3-6738-478B-B2BA-E1CD2343AA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{699BF3BC-3A3D-4601-A934-136306D5E028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699BF3BC-3A3D-4601-A934-136306D5E028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699BF3BC-3A3D-4601-A934-136306D5E028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699BF3BC-3A3D-4601-A934-136306D5E028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E44B2E22-2488-4D36-BA14-B74E4B27B342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44B2E22-2488-4D36-BA14-B74E4B27B342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44B2E22-2488-4D36-BA14-B74E4B27B342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44B2E22-2488-4D36-BA14-B74E4B27B342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C424E7D-2CA6-427A-96F8-33CCE8DA5ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C424E7D-2CA6-427A-96F8-33CCE8DA5ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C424E7D-2CA6-427A-96F8-33CCE8DA5ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C424E7D-2CA6-427A-96F8-33CCE8DA5ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{508AB2C3-6738-478B-B2BA-E1CD2343AA75} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{699BF3BC-3A3D-4601-A934-136306D5E028} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E44B2E22-2488-4D36-BA14-B74E4B27B342} = {7FA795A9-0E28-42EC-B0C1-051BAF554190}
+		{5C424E7D-2CA6-427A-96F8-33CCE8DA5ED9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28356E97-0A87-4380-AFA9-C3EBFD8575A7}
+	EndGlobalSection
+EndGlobal
