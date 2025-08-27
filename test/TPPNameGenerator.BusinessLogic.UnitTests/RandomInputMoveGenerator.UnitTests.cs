@@ -7,9 +7,9 @@ using TPPNameGenerator.Domain.Entities;
 
 namespace TPPNameGenerator.BusinessLogic.UnitTests
 {
-    public class InputMoveGeneratorUnitTests
+    public class RandomInputMoveGeneratorUnitTests
     {
-        private readonly InputMoveGenerator _inputmoveGenerator;
+        private readonly RandomInputMoveGenerator _inputmoveGenerator;
 
         [Fact]
         public void Given_1RandomMove_When_GenerateRandomInput_ReturnsValidEnum()
@@ -57,7 +57,7 @@ namespace TPPNameGenerator.BusinessLogic.UnitTests
 
         public InputMoveGeneratorUnitTests()
         {
-            _inputmoveGenerator = new InputMoveGenerator();
+            _inputmoveGenerator = new RandomInputMoveGenerator();
         }
     }
 }

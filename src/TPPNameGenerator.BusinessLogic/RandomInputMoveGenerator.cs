@@ -10,10 +10,10 @@ namespace TPPNameGenerator.BusinessLogic
     /// <summary>
     /// This class is responsible for generating sequences of input moves to create names using a virtual keyboard.
     /// </summary>
-    public class InputMoveGenerator
+    public class RandomInputMoveGenerator
     {
 
-        public InputMoveGenerator()
+        public RandomInputMoveGenerator()
         {
         }
 
