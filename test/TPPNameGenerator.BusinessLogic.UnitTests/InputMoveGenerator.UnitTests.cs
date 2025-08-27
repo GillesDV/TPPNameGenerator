@@ -37,6 +37,24 @@ namespace TPPNameGenerator.BusinessLogic.UnitTests
             Assert.True(listOfMoves.Distinct().Count() > 3);
         }
 
+        [Fact]
+        public void Given_200RandomMoves_When_GenerateRandomInput_ReturnsAllMoves()
+        {
+            // Arrange
+            var inputMovesSeen = Enum.GetValues(typeof(InputMove)).Cast<InputMove>().ToHashSet();
+
+            // Act
+            for (int i = 0; i < 500; i++) 
+            {
+                inputMovesSeen.Remove(_inputmoveGenerator.GenerateRandomInput());
+                if (inputMovesSeen.Count == 0)
+                    break;
+            }
+
+            // Assert
+            Assert.Empty(inputMovesSeen); // all values observed at least once
+        }
+
         public InputMoveGeneratorUnitTests()
         {
             _inputmoveGenerator = new InputMoveGenerator();

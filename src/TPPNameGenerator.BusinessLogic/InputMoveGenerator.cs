@@ -12,9 +12,17 @@ namespace TPPNameGenerator.BusinessLogic
     /// </summary>
     public class InputMoveGenerator
     {
+
+        public InputMoveGenerator()
+        {
+        }
+
+        //TODO might have to revisit this signature when we need to mock this for testing other classes that consume this? 
         public InputMove GenerateRandomInput()
         {
-            throw new NotImplementedException();
+            var values = (InputMove[]) Enum.GetValues(typeof(InputMove));
+
+            return values[Random.Shared.Next(values.Length)];
         }
     }
 }
