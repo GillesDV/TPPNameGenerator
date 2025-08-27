@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TPPNameGenerator.Domain\TPPNameGenerator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

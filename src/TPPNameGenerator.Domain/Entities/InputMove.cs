@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TPPNameGenerator.Domain.Entities
 {
-    public enum InputMoves
+    public enum InputMove
     {
         A, //Select letter
         B, // remove last letter
@@ -16,7 +16,7 @@ namespace TPPNameGenerator.Domain.Entities
         Left,
         Right,
 
-        Start, // go to End button
+        Start, // End naming & finalize current name
         Select //Swap keyboards
     }
 }
