@@ -8,7 +8,7 @@ namespace TPPNameGenerator.Domain.Entities
 {
     public enum InputMove
     {
-        A, //Select letter
+        A, // Select letter
         B, // remove last letter
 
         Up,
@@ -16,7 +16,7 @@ namespace TPPNameGenerator.Domain.Entities
         Left,
         Right,
 
-        Start, // End naming & finalize current name
-        Select //Swap keyboards
+        Start, // End naming-process & finalize current selection
+        Select // Swap keyboards
     }
 }
