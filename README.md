@@ -22,6 +22,13 @@ The process of generating random inputs ends when either
     - keep in mind characters can be removed. 
 - Start has been selected as input
 
+### Keyboards
+![Visual representation of the default keyboard with uppercase letters](assets/keyboard-uppercase.png)
+
+![Visual representation of the keyboard with lowercase letters](assets/keyboard-lowercase.png)
+
+![Visual representation of the keyboard with numbers](assets/keyboard-numbers.png)
+
 ## 🚀 Features
 - Program will return a nickname for a pokemon, using random inputs as if a user was typing on a keyboard. 
 
