@@ -19,8 +19,11 @@ namespace TPPNameGenerator.BusinessLogic
 
         public List<InputMove> BuildInputMoveList()
         {
+            List<InputMove> inputMoves = new();
 
-            throw new NotImplementedException();
+            inputMoves.Add(_inputMoveGenerator.GenerateRandomInput());
+
+            return inputMoves;
         }
 
     }

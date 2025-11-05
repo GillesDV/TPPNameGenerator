@@ -9,20 +9,18 @@ using TPPNameGenerator.Domain.Entities;
 
 namespace TPPNameGenerator.BusinessLogic.UnitTests
 {
-    internal class InputMoveSequenceBuilderUnitTests
+    public class InputMoveSequenceBuilderUnitTests
     {
         private readonly InputMoveSequenceBuilder _builder;
 
         private readonly Mock<IRandomInputMoveGenerator> _mockRandomInputMoveGenerator;
 
-        public async Task Given_ListEndsWithStart_When_BuildInputMoveList_ReturnsListWithStart() //BuildInputMoveList_ShouldReturnListOfInputMoves_WhenCalled()
+        [Fact]
+        public void Given_FirstArgumentIsStart_When_BuildInputMoveList_Then_ReturnListWith1Entry()
         {
             // Arrange
-            var expectedMoves = new List<InputMove> { InputMove.Right, InputMove.Down, InputMove.A, InputMove.Start };
+            var expectedMoves = new List<InputMove> { InputMove.Start };
             _mockRandomInputMoveGenerator.SetupSequence(m => m.GenerateRandomInput())
-                .Returns(InputMove.Right)
-                .Returns(InputMove.Down)
-                .Returns(InputMove.A)
                 .Returns(InputMove.Start);
 
             // Act
@@ -30,7 +28,8 @@ namespace TPPNameGenerator.BusinessLogic.UnitTests
 
             // Assert
             Assert.Equal(expectedMoves, result);
-            _mockRandomInputMoveGenerator.Verify(m => m.GenerateRandomInput(), Times.Exactly(4));
+            _mockRandomInputMoveGenerator.Verify(m => m.GenerateRandomInput(), Times.Once);
+            Assert.Single(result);
         }
 
         public InputMoveSequenceBuilderUnitTests()
