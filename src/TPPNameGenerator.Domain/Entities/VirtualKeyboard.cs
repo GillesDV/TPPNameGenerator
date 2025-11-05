@@ -10,7 +10,7 @@ namespace TPPNameGenerator.Domain.Entities
     /// A clear, consise representation of the virtual keyboard layouts used in the naming screen.
     /// </summary>
     /// <remarks
-    /// Yes, this could be automatically generated, but this shorter and more readable in my opinion. 
+    /// Yes, this could be automatically generated, but this is shorter and more readable in my opinion. 
     ///</remarks>
 
     public static class VirtualKeyboard

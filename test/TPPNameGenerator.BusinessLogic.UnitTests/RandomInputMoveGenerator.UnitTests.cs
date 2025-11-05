@@ -55,7 +55,7 @@ namespace TPPNameGenerator.BusinessLogic.UnitTests
             Assert.Empty(inputMovesSeen); // all values observed at least once
         }
 
-        public InputMoveGeneratorUnitTests()
+        public RandomInputMoveGeneratorUnitTests()
         {
             _inputmoveGenerator = new RandomInputMoveGenerator();
         }
