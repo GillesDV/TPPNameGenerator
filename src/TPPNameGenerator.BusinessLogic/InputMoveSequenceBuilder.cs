@@ -21,7 +21,11 @@ namespace TPPNameGenerator.BusinessLogic
         {
             List<InputMove> inputMoves = new();
 
-            inputMoves.Add(_inputMoveGenerator.GenerateRandomInput());
+            do
+            {
+                InputMove newInput = _inputMoveGenerator.GenerateRandomInput();
+                inputMoves.Add(newInput);
+            } while (inputMoves.Last() != InputMove.Start);
 
             return inputMoves;
         }

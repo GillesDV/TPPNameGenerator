@@ -32,6 +32,27 @@ namespace TPPNameGenerator.BusinessLogic.UnitTests
             Assert.Single(result);
         }
 
+        [Fact]
+        public void Given_ListEndsWithStart_When_BuildInputMoveList_ReturnsListWithStart()
+        {
+            // Arrange
+            var expectedMoves = new List<InputMove> { InputMove.Right, InputMove.Down, InputMove.A, InputMove.Start };
+            _mockRandomInputMoveGenerator.SetupSequence(m => m.GenerateRandomInput())
+                .Returns(InputMove.Right)
+                .Returns(InputMove.Down)
+                .Returns(InputMove.A)
+                .Returns(InputMove.Start);
+
+            // Act
+            var result = _builder.BuildInputMoveList();
+
+            // Assert
+            Assert.Equal(expectedMoves, result);
+            _mockRandomInputMoveGenerator.Verify(m => m.GenerateRandomInput(), Times.Exactly(4));
+            Assert.True(result.Last() == InputMove.Start);
+        }
+
+
         public InputMoveSequenceBuilderUnitTests()
         {
             _mockRandomInputMoveGenerator = new Mock<IRandomInputMoveGenerator>(MockBehavior.Strict);
